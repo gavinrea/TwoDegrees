@@ -5,11 +5,11 @@ one:
   name: MyString
   email: MyString
   user_id: MyString
-  requests: 
+  linkedin_id: MyString
 
 two:
   intro: MyString
   name: MyString
   email: MyString
   user_id: MyString
-  requests: 
+  linkedin_id: MyString
