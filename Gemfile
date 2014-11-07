@@ -34,6 +34,10 @@ gem 'linkedin'
 
 gem 'bootstrap-sass'
 
+gem 'omniauth'
+
+gem 'omniauth-linkedin'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

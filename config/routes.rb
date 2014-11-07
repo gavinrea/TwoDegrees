@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :requests
+
+  resources :intros
+
   devise_for :users
   root 'pages#home'
   resources :contacts

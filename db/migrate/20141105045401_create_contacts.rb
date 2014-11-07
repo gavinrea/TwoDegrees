@@ -4,7 +4,7 @@ class CreateContacts < ActiveRecord::Migration
       t.string :intro
       t.string :name
       t.string :email
-      t.string :user_id
+  
       t.string :linkedin_id
 
       t.timestamps
