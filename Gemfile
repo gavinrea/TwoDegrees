@@ -30,12 +30,10 @@ gem 'spring',        group: :development
 
 gem 'devise'
 
-gem 'linkedin'
-
 gem 'bootstrap-sass'
 
+# devise linkedin config
 gem 'omniauth'
-
 gem 'omniauth-linkedin'
 
 # Use ActiveModel has_secure_password
