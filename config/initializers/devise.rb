@@ -94,7 +94,7 @@ Devise.setup do |config|
   # a value less than 10 in other environments. Note that, for bcrypt (the default
   # encryptor), the cost increases exponentially with the number of stretches (e.g.
   # a value of 20 is already extremely slow: approx. 60 seconds for 1 calculation).
-config.stretches = Rails.env.test? ? 1 : 10
+  config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
   # config.pepper = 'a2cb9cccfc0652ba18d44fa328f76e7286b8b1e46ee7c4dd15f48d0096fca1e316c9fcfc39f26fcfdb96aa872e3c53ee9af4d11c7caaf425e9b46659bbec2f47'
@@ -256,6 +256,4 @@ config.stretches = Rails.env.test? ? 1 : 10
   # When using omniauth, Devise cannot automatically set Omniauth path,
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
-  require 'omniauth-linkedin'
-  config.omniauth :linkedin, "75wvvqbustuspb", "plGqnLZl4nb0ek0w"
 end
