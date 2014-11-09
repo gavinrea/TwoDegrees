@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"lin",
+				"linkedin_client"
+			],
+			[
+				"prof",
+				"profile_1"
+			],
+			[
+				"to",
+				"to_s"
+			],
+			[
+				"linked",
+				"linked_in"
+			],
+			[
+				"btn",
+				"btn-primary"
+			],
+			[
 				"er",
 				"er	embed ruby ERB"
 			],
@@ -27,13 +47,60 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 1512,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1711,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/identity.rb",
+			"settings":
+			{
+				"buffer_size": 252,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/initializers/devise.rb",
+			"settings":
+			{
+				"buffer_size": 12920,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Rails.application.configure do\n  # Settings specified here will take precedence over those in config/application.rb.\n\n  # In the development environment your application's code is reloaded on\n  # every request. This slows down response time but is perfect for development\n  # since you don't have to restart the web server when you make code changes.\n  config.cache_classes = false\n\n  # Do not eager load code on boot.\n  config.eager_load = false\n\n  # Show full error reports and disable caching.\n  config.consider_all_requests_local       = true\n  config.action_controller.perform_caching = false\n\n  # Don't care if the mailer can't send.\n  config.action_mailer.raise_delivery_errors = false\n\n  # Print deprecation notices to the Rails logger.\n  config.active_support.deprecation = :log\n\n  # Raise an error on page load if there are pending migrations.\n  config.active_record.migration_error = :page_load\n\n  # Debug mode disables concatenation and preprocessing of assets.\n  # This option may cause significant delays in view rendering with a large\n  # number of complex assets.\n  config.assets.debug = true\n\n  # Adds additional error checking when serving assets at runtime.\n  # Checks for improperly declared sprockets dependencies.\n  # Raises helpful error messages.\n  config.assets.raise_runtime_errors = true\n\n  # Raises error for missing translations\n  # config.action_view.raise_on_missing_translations = true\n\n# for devise\nconfig.action_mailer.default_url_options = { host: 'localhost', port: 3000 }\n\n# devise linkedin\n  # General Settings\n  config.app_domain = 'http://0.0.0.0:3000/'\n\n  # Email\n  config.action_mailer.delivery_method = :smtp\n  config.action_mailer.perform_deliveries = true\n  config.action_mailer.default_url_options = { host: config.app_domain }\n  config.action_mailer.smtp_settings = {\n    address: 'smtp.gmail.com', \n    port: '587',\n    enable_starttls_auto: true,\n    user_name: 'someuser',\n    password: 'somepass',\n    authentication: :plain,\n    domain: 'http://0.0.0.0:3000/'\n  }\n\n\nend\n",
+			"file": "config/environments/development.rb",
+			"file_size": 1514,
+			"file_write_time": 130598097990000000,
+			"settings":
+			{
+				"buffer_size": 2022,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 47.0,
+		"height": 187.0,
 		"selected_items":
 		[
+			[
+				"reinden",
+				"Indentation: Reindent Lines"
+			],
 			[
 				"Package Control: inst",
 				"Package Control: Install Package"
@@ -55,7 +122,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 467.0
+		"width": 530.0
 	},
 	"console":
 	{
@@ -76,10 +143,73 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/gavinrea/Ruby Projects/TwoDegrees"
+		"/Users/gavinrea/Ruby Projects/TwoDegrees",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/controllers",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/models",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/views",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/views/devise",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/views/layouts",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/views/pages",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/config",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/config/environments",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/config/initializers"
 	],
 	"file_history":
 	[
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/views/layouts/_bootstrap_header.html.erb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/views/devise/registrations/new.html.erb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/models/user.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/config/initializers/devise.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/config/routes.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/controllers/contacts_controller.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/Gemfile",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/views/devise/sessions/new.html.erb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/controllers/omniauth_callbacks_controller.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/views/pages/home.html.erb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/views/layouts/application.html.erb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/controllers/pages_controller.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/tmp/cache/assets/development/sass/65fbcf5c62fcfb028f414d6e2d0295e1d7ef0b6f/_popovers.scssc",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/views/devise/mailer/reset_password_instructions.html.erb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/controllers/users_controller.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/config/initializers/wrap_parameters.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/views/devise/shared/_links.html.erb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/views/contacts/show.html.erb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/assets/stylesheets/application.css",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/tmp/cache/assets/development/sass/e491dc922b33ab5d6c44275ba98aef5d0fe4351e/_hide-text.scssc",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/config/initializers/session_store.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/config/secrets.yml",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/bin/spring",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/views/contacts/new.html.erb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/models/identity.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/config/application.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/controllers/application_controller.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/test/fixtures/users.yml",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/views/users/finish_signup.html.erb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/config/initializers/filter_parameter_logging.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/views/contacts/index.html.erb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/models/intro.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/db/development.sqlite3",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/config/database.yml",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/test/fixtures/contacts.yml",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/models/contact.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/config.ru",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/tmp/cache/assets/development/sass/e491dc922b33ab5d6c44275ba98aef5d0fe4351e/_background-variant.scssc",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/tmp/cache/assets/development/sass/65fbcf5c62fcfb028f414d6e2d0295e1d7ef0b6f/_responsive-utilities.scssc",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/test/controllers/requests_controller_test.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/Rakefile",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/controllers/intros_controller.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/controllers/requests_controller.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/db/migrate/20141105053137_devise_create_users.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/views/contacts/_form.html.erb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/db/migrate/20141105054506_create_intros.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/config/environments/development.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/db/migrate/20141105054642_create_requests.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/models/request.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/db/migrate/20141105045401_create_contacts.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/config/environments/production.rb",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/assets/stylesheets/bootstrap_and_customization.css.scss",
+		"/Users/gavinrea/Ruby Projects/TwoDegrees/app/assets/javascripts/application.js",
 		"/Users/gavinrea/Ruby Projects/pinteresting/app/assets/stylesheets/application.css.scss",
 		"/Users/gavinrea/Ruby Projects/pinteresting/app/models/pin.rb",
 		"/Users/gavinrea/Ruby Projects/pinteresting/Gemfile",
@@ -158,6 +288,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/gavinrea/Ruby Projects/TwoDegrees",
 			"/Users/gavinrea/,/Users/gavinrea/Ruby Projects/pinteresting",
 			"/Users/gavinrea/Analytics/",
 			"/Users/gavinrea/Analytics/data"
@@ -168,6 +299,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"auth",
+			"confirmed_at",
+			"link_to",
+			" %>",
+			"class=\"field\">",
+			" %>",
+			"_field ",
+			"\"field\"",
+			" %>",
+			"field",
+			"field ",
+			"field",
+			"Introduction",
+			"introductions",
 			"</td>",
 			"<td>",
 			"js is added to application!",
@@ -205,8 +350,155 @@
 	"groups":
 	[
 		{
+			"selected": 4,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Gemfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1512,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1131,
+								1131
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 257.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "config/routes.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1711,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								78,
+								78
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/models/identity.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 252,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								252,
+								252
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "config/initializers/devise.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12920,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12747,
+								12747
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4759.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "config/environments/development.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2022,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2010,
+								2010
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 475.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -261,6 +553,54 @@
 		"selected_items":
 		[
 			[
+				"omni",
+				"app/controllers/omniauth_callbacks_controller.rb"
+			],
+			[
+				"user.",
+				"app/models/user.rb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"user.r",
+				"app/models/user.rb"
+			],
+			[
+				"om",
+				"app/controllers/omniauth_callbacks_controller.rb"
+			],
+			[
+				"shared/lin",
+				"app/views/devise/shared/_links.html.erb"
+			],
+			[
+				"session/new",
+				"app/views/devise/sessions/new.html.erb"
+			],
+			[
+				"contact",
+				"app/controllers/contacts_controller.rb"
+			],
+			[
+				"usersco",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"finish",
+				"app/views/users/finish_signup.html.erb"
+			],
+			[
+				"devise.",
+				"config/initializers/devise.rb"
+			],
+			[
+				"contacts",
+				"app/controllers/contacts_controller.rb"
+			],
+			[
 				"html.erb",
 				"app/views/layouts/application.html.erb"
 			],
@@ -311,7 +651,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 225.0,
+	"side_bar_width": 255.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

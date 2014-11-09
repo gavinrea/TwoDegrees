@@ -1,6 +1,6 @@
 class CreateIntros < ActiveRecord::Migration
 	def change
-		create_table :intros do |t|
+		create_table :introductions do |t|
 			t.integer :contact1 
 			t.integer :contact2
 			t.string :email1

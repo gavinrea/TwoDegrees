@@ -1,12 +1,19 @@
 Rails.application.routes.draw do
 
-  resources :requests
+  get 'registrations/after_sign_up_path_for'
 
-  resources :intros
-
-  devise_for :users
   root 'pages#home'
+
+  get 'profile' => 'contacts#showProfile'
+
+  get 'contacts/afterCreate' => 'contacts#afterCreate'
+
+  
+  resources :requests
+  resources :intros
+  devise_for :users, :controllers => { :registrations => "registrations" }
   resources :contacts
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

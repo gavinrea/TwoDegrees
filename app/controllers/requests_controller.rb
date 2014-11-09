@@ -1,4 +1,5 @@
 class RequestsController < ApplicationController
+  respond_to :html, :xml, :json
   before_action :set_request, only: [:show, :edit, :update, :destroy]
 
   def index

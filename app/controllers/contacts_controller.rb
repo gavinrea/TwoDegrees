@@ -1,4 +1,5 @@
 class ContactsController < ApplicationController
+  respond_to :html, :xml, :json
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -19,9 +20,19 @@ class ContactsController < ApplicationController
   end
 
   def create
+
     @contact = Contact.new(contact_params)
     @contact.save
     respond_with(@contact)
+  end
+
+  def afterCreate
+    #get contact that equals the emails
+    @contact = Contact.find_or_create_by({email: current_user.email})
+    @contact.save
+
+    render 'edit'
+    # render json: @contact
   end
 
   def update
@@ -32,6 +43,11 @@ class ContactsController < ApplicationController
   def destroy
     @contact.destroy
     respond_with(@contact)
+  end
+
+  def showProfile
+    @contact = Contact.where("email = '#{current_user.email}'").first
+    render 'show'
   end
 
   private
